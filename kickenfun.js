@@ -8,7 +8,7 @@ var server = http.createServer(
 
         //Create SUPER SIMPLE response
         response.writeHead(200, {"content-type": "text/plain"});
-        response.write("Hello world from AWS! Edited from VI! Logged out!! Edited! " + new Date().getTime());
+        response.write("Hello world from AWS! Edited from Sublime Text! And Picked up by Jenkins ! " + new Date().getTime());
         response.end();
         });
 
