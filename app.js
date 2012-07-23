@@ -8,7 +8,7 @@ function( request, response ){
 
 // Create a SUPER SIMPLE response.
 response.writeHead( 200, {"content-type": "text/plain"} );
-response.write( "Hello world from AWS UNBUNTU!!!!!!" + Date.now() + "\nDeployed From GitHub !!!!" );
+response.write( "Deployed from Github. Suck it #azure " + Date.now());
 response.end();
 
 }
