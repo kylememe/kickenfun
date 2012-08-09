@@ -3,15 +3,15 @@ var http = require( "http" );
 
 // Create our HTTP server.
 var server = http.createServer(
-function( request, response ){
+	function( request, response )
+	{
 
+		// Create a SUPER SIMPLE response.
+		response.writeHead( 200, {"content-type": "text/plain"} );
+		response.write("Awaiting Content");
+		response.end();
 
-// Create a SUPER SIMPLE response.
-response.writeHead( 200, {"content-type": "text/plain"} );
-response.write( "Deployed from Github. Suck it #azure " + Date.now());
-response.end();
-
-}
+	}
 );
 
 // Point the HTTP server to port 8080.
